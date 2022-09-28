@@ -1,0 +1,25 @@
+input{
+    min-width: 350px;
+}
+#contenets {
+    margin: auto;
+    display: table;
+}
+h1 {
+    
+}
+.jumbotron {
+    padding-bottom: 2%;
+    background-color: whitesmoke;
+    margin-bottom: 2%;
+}
+img{
+    margin: auto;
+    display: block;
+}
+p{
+    text-align: center;
+}
+button {
+    margin-top: 2%;
+}

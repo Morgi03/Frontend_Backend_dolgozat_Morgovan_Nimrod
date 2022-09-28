@@ -7,30 +7,12 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js'></script>
-    <script src="index.js"></script>
-    <style>
-        input{
-            min-width: 350px;
-        }
-        #contenets {
-            margin: auto;
-            display: table;
-        }
-        h1 {
-            
-        }
-        .jumbotron {
-            padding-bottom: 2%;
-            background-color: whitesmoke;
-            margin-bottom: 2%;
-        }
-    </style>
-
 </head>
 <body>
-    <header class="jumbotron">
-        <h1 class="display-4">Digitális Képkeret készítő</h1>
+    <header>
+        <h1>Digitális Képkeret készítő</h1>
 </header>
+<main>
     <div id="contents">
     <div class="container-fluid">
         <div class="row">
@@ -65,18 +47,35 @@
     </div>
     </div>
     <br />
-    <div class="container-fluid contents">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-md-3">
                 <label for="keretszin">Kérem válassza ki a kép keretének szinét:</label>
             </div>
-            <div class="col-md-9">
+            <div class="col-md-4">
                 <input type="color" id="keretszin">
         </div>
     </div>
    </div>
 </div>
 <br /><br /><br />
-<img src="" alt="A te képed" id="webimg">
+<img src="" alt="A te képed" id="webimg" class="img-fluid">
+<br /><br />
+</main>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+                <p>Morgován Nimród</p>
+            </div>
+            <div class="col-md-2">
+                <p>2/14T</p>
+            </div>
+            <div class="col-md-8">
+                <button id="darkmode">Sötét mód</button>
+            </div>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
