@@ -3,12 +3,80 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
+    <title>Digitális Képkeret készítő</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <script src="index.js"></script>
+    <style>
+        input{
+            min-width: 350px;
+        }
+        #contenets {
+            margin: auto;
+            display: table;
+        }
+        h1 {
+            
+        }
+        .jumbotron {
+            padding-bottom: 2%;
+            background-color: whitesmoke;
+            margin-bottom: 2%;
+        }
+    </style>
+
 </head>
 <body>
-    <p>This is a template</p>    
-    <script src='main.js'></script>
+    <header class="jumbotron">
+        <h1 class="display-4">Digitális Képkeret készítő</h1>
+</header>
+    <div id="contents">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                <label for="URLid">Kérem adja meg a kép URL-jét:</label>
+            </div>
+            <div class="col-md-9">
+                <input type="text" id="URLid" placeholder="Ide írja be a kép URL-jét">
+        </div>
+    </div>
+    </div>
+     <br />
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                <label for="PX_Width">Kérem adja meg a kép kívánt szélességét (pixel):</label>
+            </div>
+            <div class="col-md-9">
+                <input type="number" id="PX_Width" placeholder="Ide írja be a kívánt szélességet">
+        </div>
+    </div>
+    </div>
+    <br />
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                <label for="keret">Kérem adja meg a kép keretének vastagságát (pixel):</label>
+            </div>
+            <div class="col-md-9">
+                <input type="number" id="keret" placeholder="Ide írja be a képkeret vastagságát">
+        </div>
+    </div>
+    </div>
+    <br />
+    <div class="container-fluid contents">
+        <div class="row">
+            <div class="col-md-3">
+                <label for="keretszin">Kérem válassza ki a kép keretének szinét:</label>
+            </div>
+            <div class="col-md-9">
+                <input type="color" id="keretszin">
+        </div>
+    </div>
+   </div>
+</div>
+<br /><br /><br />
+<img src="" alt="A te képed" id="webimg">
 </body>
 </html>
